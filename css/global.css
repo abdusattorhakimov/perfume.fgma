@@ -1,0 +1,202 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-regular - latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/fraunces-v24-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fraunces-v24-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fraunces-700 - latin */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/fraunces-v24-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/fraunces-v24-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+img {
+  display: flex;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3d5d5;
+  font-family: "Montserrat";
+}
+.container {
+  width: 100%;
+  width: 660px;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* site css */
+.main {
+  border-radius: 10px;
+}
+.container {
+  display: flex;
+}
+.img-section {
+}
+.img-section__img {
+  border-radius: 10px 0px 0px 10px;
+  width: 30rem;
+  height: 45rem;
+}
+.perfurme {
+  border-radius: 0px 10px 10px 0px;
+  background: #ffffff;
+  padding: 3.2rem 3.1rem;
+}
+.perfurme__img {
+  display: none;
+}
+.perfurme__span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 5px;
+  color: #6c7289;
+}
+.perfurme__titel {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #1c232b;
+  margin-bottom: 2.4rem;
+  margin-top: 2rem;
+}
+.perfurme__paragriph {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #6c7289;
+  margin-bottom: 2.9rem;
+}
+.raqam-div {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+  margin-bottom: 3rem;
+}
+.raqam-div__titel {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #3d8168;
+}
+.raqam-div__paragriph {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 23px;
+  text-decoration-line: line-through;
+  color: #6c7289;
+}
+.btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: #3d8168;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.btn-link:hover{
+    background: #16286f;
+    color: #3d8168;
+}
+
+/* media */
+@media (max-width: 450px) {
+  .container {
+    width: 40.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-section {
+  }
+  .img-section__img {
+    display: none;
+  }
+  .perfurme__span {
+    /* margin-bottom: 1.2rem; */
+  }
+  .perfurme__img {
+    display: block;
+    width: 34.3rem;
+    height: 24rem;
+  }
+  .perfurme {
+    border-radius: 0px 0px 10px 10px;
+    padding: 2.4rem;
+  }
+  .perfurme__titel {
+    margin-top: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
+  .perfurme__paragriph {
+    margin-bottom: 2.4rem;
+  }
+  .raqam-div {
+    margin-bottom: 2.4rem;
+  }
+  .btn-link {
+  }
+}
